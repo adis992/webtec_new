@@ -1,0 +1,188 @@
+
+
+#tile-container {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    transform-style: preserve-3d;
+
+    animation-name: carousel-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    }
+
+    20% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 72deg);
+    }
+
+    40% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 144deg);
+    }
+
+    60% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 216deg);
+    }
+
+    80% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 288deg);
+    }
+
+    100% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateZ(-300px);
+    }
+
+    100% {
+        transform: translateZ(-300px) rotateY(360deg);
+    }
+}
+
+
+
+#tile-1 {
+    background-image: url("../img/adis-css/image1.jpg");
+    background-color: #914E67;
+    transform: rotateY(0deg) translateZ(300px);
+    animation-delay: 0s;
+}
+
+#tile-2 {
+    background-image: url("../img/adis-css/image2.jpg");
+    background-color: #4FBA6F;
+    transform: rotateY(72deg) translateZ(300px);
+    animation-delay: 3s;
+}
+
+#tile-3 {
+    background-image: url("../img/adis-css/image3.jpg");
+    background-color: #5192D2;
+    transform: rotateY(144deg) translateZ(300px);
+    animation-delay: 6s;
+}
+
+#tile-4 {
+    background-image: url("../img/adis-css/image4.jpg");
+    background-color: #E8BF1C;
+    transform: rotateY(216deg) translateZ(300px);
+    animation-delay: 9s;
+}
+
+#tile-5 {
+    background-image: url("../img/adis-css/image5.jpg");
+    background-color: #5D7586;
+    transform: rotateY(288deg) translateZ(300px);
+}
+
+#tile-6 {
+    background-image: url("../img/adis-css/image1.jpg");
+    background-color: #914E67;
+    transform: rotateY(360deg) translateZ(300px);
+}
+
+
+
+
+
+
+#main-container {
+    perspective: 400px;
+    width: 350px;
+    height: 220px; 
+}
+
+#tile-container {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    transform-style: preserve-3d;
+
+
+    animation-name: carousel-animation; /* carousel-animation je naziv animacije */
+    animation-duration: 12s;  /* 12s je vreme trajanja animacije */
+    animation-iteration-count: infinite; /* infinite je beskonacno */
+    animation-delay: 1s;  /* 1s je vreme od kada pocinje animacija */
+}
+
+
+#tile-container:hover {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 360deg);
+}
+
+.tile {
+    width: 350px;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 348px;
+    opacity: 0.95;
+}
+
+
+#tile-1 {
+    background-image: url("../img/adis-css/image1.jpg");
+    background-color: #914E67;
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+#tile-2 {
+    background-image: url("../img/adis-css/image2.jpg");
+    background-color: #4FBA6F;
+    transform: rotateY(72deg) translateZ(300px);
+}
+
+#tile-3 {
+    background-image: url("../img/adis-css/image3.jpg");
+    background-color: #5192D2;
+    transform: rotateY(144deg) translateZ(300px);
+}
+
+#tile-4 {
+    background-image: url("../img/adis-css/image4.jpg");
+    background-color: #E8BF1C;
+    transform: rotateY(216deg) translateZ(300px);
+}
+
+#tile-5 {
+    background-image: url("../img/adis-css/image5.jpg");
+    background-color: #5D7586;
+    transform: rotateY(288deg) translateZ(300px);
+}
+
+#tile-6 {
+    background-image: url("../img/adis-css/image6.jpg");
+    background-color: #000000;
+    transform: rotateY(360deg) translateZ(300px);
+    }
+    
+    @keyframes carousel-animation {
+    0% {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    }
+    20% {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 72deg);
+    }
+    40% {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 144deg);
+    }
+    60% {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 216deg);
+    }
+    80% {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 288deg);
+    }
+    100% {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 360deg);
+    }
+    }
+
+
